@@ -16,7 +16,6 @@ int main() {
     int birthMonth; // users month of birth
     int birthDay;  // users day of birth
     int birthYear;  // users year of birth
-    int magicDate;  // magic date
 
     cout << "Hello, please enter your birth-date using a two digit format (ex. 06/08/93): " << endl;
     cin >> birthMonth;
@@ -24,9 +23,8 @@ int main() {
     cin >> birthDay;
     cin.ignore();
     cin >> birthYear;
-    magicDate = birthMonth * birthDay;
 
-    if (magicDate == birthYear)
+    if (birthMonth * birthDay == birthYear)
         cout << "That's a magic date!" << endl;
     else
         cout << "Thank you!" << endl;
